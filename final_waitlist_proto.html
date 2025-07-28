@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Instagram for Growth - Glog Waitlist | Social Personal Development App</title>
+    <meta name="description" content="Instagram for growth is here! Join Glog waitlist - the social app that gamifies personal growth. Track habits, earn points, and share your authentic journey.">
+    <meta name="keywords" content="instagram for growth, personal growth app, habit tracker, social wellness, student productivity, fitness tracking, growth points">
+    <meta name="author" content="Glog">
+    
+    <!-- Open Graph Meta Tags (for social sharing) -->
+    <meta property="og:title" content="Instagram for Growth - Glog Waitlist">
+    <meta property="og:description" content="Instagram for growth is finally here! Turn personal development into a social adventure with Glog.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://glog.app">
+    <meta property="og:image" content="glog-social-preview.jpg">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #FAF3E0;
+        }
+        
+        /* Container for consistent spacing */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #FAF3E0 0%, #E8E8E8 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        /* Subtle background pattern */
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="1" fill="%23CDB4DB" opacity="0.1"/></svg>') repeat;
+            background-size: 50px 50px;
+            animation: float 20s infinite linear;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            100% { transform: translateY(-50px); }
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        /* Logo in Hero */
+        .hero-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 30px;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .hero-g {
+            font-size: 48px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #7ACAAE 0%, #CDB4DB 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            display: inline-block;
+        }
+        
+        .hero-dot {
+            font-size: 24px;
+            color: #FF8C42;
+            font-weight: 700;
+            animation: pulse 2s infinite;
+            text-shadow: 0 0 10px rgba(255, 140, 66, 0.4);
+        }
+        
+        .hero-log {
+            font-size: 48px;
+            font-weight: 600;
+            color: #333;
+            letter-spacing: -1px;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.1); opacity: 0.8; }
+        }
+        
+        /* Main Headline */
+        .hero-headline {
+            font-size: 56px;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .hero-tagline {
+            font-size: 24px;
+            color: #7ACAAE;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+        
+        /* Hook Line */
+        .hero-hook {
+            font-size: 20px;
+            color: #666;
+            margin-bottom: 40px;
+            font-weight: 400;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* CTA Button */
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #7ACAAE 0%, #CDB4DB 100%);
+            color: white;
+            padding: 18px 40px;
+            border: none;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(122, 202, 174, 0.3);
+            margin-bottom: 30px;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(122, 202, 174, 0.4);
+        }
+        
+        /* Social Proof */
+        .social-proof {
+            font-size: 16px;
+            color: #888;
+            font-weight: 500;
+        }
+        
+        .proof-number {
+            color: #FF8C42;
+            font-weight: 700;
+        }
+        
+        /* Features Section */
+        .features {
+            padding: 100px 0;
+            background: white;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 42px;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 60px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+        
+        .feature-card {
+            background: #FAF3E0;
+            padding: 40px 30px;
+            border-radius: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            border: 2px solid transparent;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: #7ACAAE;
+        }
+        
+        .feature-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+            display: block;
+        }
+        
+        .feature-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        
+        .feature-description {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        /* Email Signup Section */
+        .signup {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #7ACAAE 0%, #CDB4DB 100%);
+            color: white;
+            text-align: center;
+        }
+        
+        .signup-title {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        
+        .signup-subtitle {
+            font-size: 18px;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+        
+        .email-form {
+            max-width: 500px;
+            margin: 0 auto;
+            display: flex;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .email-input {
+            flex: 1;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 50px;
+            font-size: 16px;
+            outline: none;
+        }
+        
+        .email-button {
+            background: #FF8C42;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .email-button:hover {
+            background: #e6793a;
+            transform: translateY(-2px);
+        }
+        
+        .privacy-note {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+        
+        /* Footer */
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+        }
+        
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .footer-g {
+            font-size: 24px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #7ACAAE 0%, #CDB4DB 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .footer-dot {
+            font-size: 12px;
+            color: #FF8C42;
+            font-weight: 700;
+        }
+        
+        .footer-log {
+            font-size: 24px;
+            font-weight: 600;
+            color: white;
+        }
+        
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .hero-headline {
+                font-size: 36px;
+            }
+            
+            .hero-tagline {
+                font-size: 18px;
+            }
+            
+            .hero-hook {
+                font-size: 16px;
+            }
+            
+            .hero-g, .hero-log {
+                font-size: 36px;
+            }
+            
+            .hero-dot {
+                font-size: 18px;
+            }
+            
+            .email-form {
+                flex-direction: column;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 32px;
+            }
+        }
+        
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Loading animation for form submission */
+        .loading {
+            opacity: 0.7;
+            pointer-events: none;
+        }
+        
+        .success-message {
+            background: #7ACAAE;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <!-- Logo -->
+                <div class="hero-logo">
+                    <span class="hero-g">G</span>
+                    <span class="hero-dot">•</span>
+                    <span class="hero-log">log</span>
+                </div>
+                
+                <!-- Main Headlines -->
+                <h1 class="hero-headline">Turn Personal Growth Into a Social Adventure</h1>
+                <h1>Instagram for Growth</h1>
+                <p class="hero-tagline">Instagram for Personal Growth</p>
+                <p class="hero-hook">Tired of boring habit trackers? Ready for authentic growth over fake highlights?</p>
+                
+                <!-- CTA Button -->
+                <a href="#signup" class="cta-button">Join the Waitlist</a>
+                
+                <!-- Social Proof -->
+                <p class="social-proof">Join <span class="proof-number">500+</span> students and fitness enthusiasts building better habits together</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Finally, a Social App That Makes You Better</h2>
+            <p class="section-subtitle">Growth is more fun with friends. Share your authentic journey, not fake highlights.</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3 class="feature-title">Track Daily Progress</h3>
+                    <p class="feature-description">Log study sessions, workouts, and personal goals. Watch your consistency build over time with friends cheering you on.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🎮</div>
+                    <h3 class="feature-title">Earn Growth Points</h3>
+                    <p class="feature-description">Get rewarded for effort and consistency, not likes or followers. Your dedication translates into real progress points.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3 class="feature-title">Customize Your Avatar</h3>
+                    <p class="feature-description">Spend earned points to upgrade your growth avatar. Visual representation of your real-world development journey.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3 class="feature-title">Share Authentic Wins</h3>
+                    <p class="feature-description">Post real struggles and victories. Build a supportive community that celebrates progress over perfection.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🤝</div>
+                    <h3 class="feature-title">Build Accountability</h3>
+                    <p class="feature-description">Connect with like-minded people on similar journeys. Daily check-ins and motivation from your growth community.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📖</div>
+                    <h3 class="feature-title">Journal Your Journey</h3>
+                    <p class="feature-description">Reflect on daily progress with built-in journaling. Track mood, thoughts, and insights as you grow.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Email Signup Section -->
+    <section class="signup" id="signup">
+        <div class="container">
+            <h2 class="signup-title">Be Among the First to Experience Glog</h2>
+            <p class="signup-subtitle">Get early access and help shape the future of authentic social growth</p>
+            
+            <form class="email-form" id="waitlistForm">
+                <input type="email" class="email-input" placeholder="Enter your email address" required id="emailInput">
+                <button type="submit" class="email-button">Join Waitlist</button>
+            </form>
+            
+            <div class="success-message" id="successMessage">
+                🎉 Welcome to the Glog community! You'll be among the first to know when we launch.
+            </div>
+            
+            <p class="privacy-note">We respect your privacy. No spam, just updates on Glog's launch.</p>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">
+                <span class="footer-g">G</span>
+                <span class="footer-dot">•</span>
+                <span class="footer-log">log</span>
+            </div>
+            <p>&copy; 2025 Glog. Building the future of authentic personal growth.</p>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script>
+        // Supabase configuration - REPLACE WITH YOUR ACTUAL VALUES
+        const SUPABASE_URL = 'https://gqvjycfhsvblffyrnzeb.supabase.co'
+        const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imdxdmp5Y2Zoc3ZibGZmeXJuemViIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTM3Mjg3MTcsImV4cCI6MjA2OTMwNDcxN30.cbma8_XZmBAXFl9tpqR0NDn5gecBUBC9SWQIJY78Atc'
+        const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
+
+        // Email form handling
+        document.getElementById('waitlistForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const form = this;
+            const emailInput = document.getElementById('emailInput');
+            const successMessage = document.getElementById('successMessage');
+            const submitButton = form.querySelector('.email-button');
+            
+            // Validate email
+            const email = emailInput.value.trim();
+            if (!email || !email.includes('@')) {
+                alert('Please enter a valid email address');
+                return;
+            }
+            
+            // Add loading state
+            form.classList.add('loading');
+            submitButton.textContent = 'Joining...';
+            submitButton.disabled = true;
+            
+            try {
+                // Insert email into Supabase
+                const { data, error } = await supabase
+                    .from('waitlist')
+                    .insert([{ email: email }]);
+                
+                if (error) {
+                    if (error.code === '23505') { // Unique constraint violation
+                        throw new Error('This email is already on our waitlist!');
+                    }
+                    throw error;
+                }
+                
+                // Show success message
+                successMessage.style.display = 'block';
+                emailInput.value = '';
+                submitButton.textContent = 'Joined! 🎉';
+                
+                // Reset button after 3 seconds
+                setTimeout(() => {
+                    submitButton.textContent = 'Join Waitlist';
+                    submitButton.disabled = false;
+                    successMessage.style.display = 'none';
+                }, 3000);
+                
+            } catch (error) {
+                console.error('Error:', error);
+                alert(error.message || 'Something went wrong. Please try again.');
+                submitButton.textContent = 'Join Waitlist';
+                submitButton.disabled = false;
+            }
+            
+            form.classList.remove('loading');
+        });
+
+        // Smooth scroll for CTA button
+        document.querySelector('.cta-button').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector('#signup').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
